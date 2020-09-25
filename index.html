@@ -23,7 +23,7 @@
 
     <section class="banner">
         <div class="text">
-            <h2>Hey, I'm<br><span>Raulf Haidari.</span></h2>
+            <h2>Hi, I'm<br><span>Raulf Haidari.</span></h2>
             <h3>I'm a KYH student.</h3>
             <a href="#" class="btn">About me</a>
         </div>
@@ -36,17 +36,59 @@
             <div class="contentLorum">
                 <h3>I'm a KYH student</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem facilis deserunt accusamus nam, minus, impedit nihil quod debitis eveniet repellendus expedita. Odit delectus saepe qui vel id necessitatibus quod impedit? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores eveniet ipsum fugiat id amet totam maiores suscipit, iusto eos saepe distinctio eius. Voluptatibus soluta modi rem magnam! Omnis, neque quas. <br><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta accusamus tempore vel laborum, architecto ex ducimus corrupti, deleniti repudiandae distinctio asperiores voluptatum nam quis in doloribus quo earum suscipit tenetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa magni blanditiis sint. Vero molestias deleniti eius incidunt dicta quasi ullam optio quo eos officia, ratione saepe unde neque voluptas placeat. <br><br>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, alias sunt. Laborum aliquid perspiciatis voluptatibus odio, consequatur exercitationem tempore culpa nisi deserunt magnam! Aliquid, incidunt sint enim asperiores distinctio quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse dolorum fugiat voluptatum soluta repellat molestiae cupiditate qui reiciendis impedit. Excepturi ea facilis impedit autem accusamus doloremque mollitia blanditiis, quidem optio?
-                </p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, alias sunt. Laborum aliquid perspiciatis voluptatibus odio, consequatur exercitationem tempore culpa nisi deserunt magnam!</p>
             </div>
             <div class="pic">
                 <img src="book.jpg" alt="img">
             </div>
         </div>
     </section>
+    <section class="skills section" id="section">
+        <div class="heading">
+            <h2>My experience</h2>
 
+            <div class="skills__container bd-grid">
+                <div class="skills__content">
+                    <h3 class="skills__subtitle">Frontend</h3>
+
+                    <div class="skills__data">
+                        <span class="skills__name">Html</span>
+                        <span class="skills__number">10%</span>
+                        <span class="skills__bar skills__html"></span>
+                        <i class='bx bxl-html5 skills__icon'></i>
+                    </div>
+
+                    <div class="skills__data">
+                        <span class="skills__name">Css</span>
+                        <span class="skills__number">10%</span>
+                        <span class="skills__bar skills__css"></span>
+                        <i class='bx bxl-css3 skills__icon' ></i>
+                    </div>
+
+                    <div class="skills__data">
+                        <span class="skills__name">Javascript</span>
+                        <span class="skills__number">5%</span>
+                        <span class="skills__bar skills__js"></span>
+                        <i class='bx bxl-javascript skills__icon' ></i>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        
+
+    </section>
+
+    <!-- Javascript.info/onscroll -->
+    <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0)
+        })
+    </script>
 
     
-<script src="index.js"></script>
 </body>
 </html>
