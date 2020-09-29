@@ -6,44 +6,46 @@
         
     <link rel="stylesheet" href="style.css">
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="index.js">
     <title>My portfolio</title>
+    <script defer src="index.js"></script>
 </head>
 <body>
     <header>
         <a href="#" class="logo">Portfolio</a>
-        <div class="toggle"></div>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Recent Works</a></li>
-            <li><a href="#">Contact</a></li>
-            </ul>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="menu">
+            <li><a href="#home" onclick="toggleMenu();">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu();">About</a></li>
+            <li><a href="#skills" onclick="toggleMenu();">Skills</a></li>
+            <li><a href="#recent work" onclick="toggleMenu();">Recent Works</a></li>
+            <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+        </ul>
     </header>
 
-    <section class="banner">
+    <section class="banner" id="home">
         <div class="text">
             <h2>Hi, I'm<br><span>Raulf Haidari.</span></h2>
             <h3>I'm a KYH student.</h3>
-            <a href="#" class="btn">About me</a>
+            <a href="#about" class="btn">Read more</a>
         </div>
     </section>
-    <section class="about">
+    <section class="about" id="about">
         <div class="heading">
             <h2>About me</h2>
         </div>
         <div class="content">
             <div class="contentLorum">
                 <h3>I'm a KYH student</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem facilis deserunt accusamus nam, minus, impedit nihil quod debitis eveniet repellendus expedita. Odit delectus saepe qui vel id necessitatibus quod impedit? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores eveniet ipsum fugiat id amet totam maiores suscipit, iusto eos saepe distinctio eius. Voluptatibus soluta modi rem magnam! Omnis, neque quas. <br><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta accusamus tempore vel laborum, architecto ex ducimus corrupti, deleniti repudiandae distinctio asperiores voluptatum nam quis in doloribus quo earum suscipit tenetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa magni blanditiis sint. Vero molestias deleniti eius incidunt dicta quasi ullam optio quo eos officia, ratione saepe unde neque voluptas placeat. <br><br>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, alias sunt. Laborum aliquid perspiciatis voluptatibus odio, consequatur exercitationem tempore culpa nisi deserunt magnam!</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem facilis deserunt accusamus nam, minus, impedit nihil quod debitis eveniet repellendus expedita. Odit delectus saepe qui vel id necessitatibus quod impedit? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores eveniet ipsum fugiat id amet totam maiores suscipit, iusto eos saepe distinctio eius. Voluptatibus soluta modi rem magnam! Omnis, neque quas. <br><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta accusamus tempore vel laborum, architecto ex ducimus corrupti, deleniti repudiandae distinctio asperiores voluptatum nam quis in doloribus quo earum suscipit tenetur. Lorem ipsum dolor sit amet consectetur adipisicing elit.  </p>
             </div>
             <div class="pic">
                 <img src="book.jpg" alt="img">
             </div>
         </div>
     </section>
-    <section class="skills section" id="section">
+    
+    <section class="skills" id="skills">
         <div class="heading">
             <h2>My experience</h2>
 
@@ -75,10 +77,67 @@
                 
             </div>
         </div>
-        
+    </section>
 
-        
+    <section class="recent work" id="recent work">
+        <div class="heading">
+            <h2>Recent Works</h2>
+        </div>
+        <div class="content">
+            <div class="workimg">
+                <img src="projekt5.jpg">
+            </div>
+            <div class="workimg">
+                <img src="projekt2.jpg">
+            </div>
+            <div class="workimg">
+                <img src="projekt3.jpg">
+            </div>
+            <div class="workimg">
+                <img src="projekt4.jpg">
+            </div>
+        </div>
+        <div class="heading">
+            <a href="#" class="btn">View more</a>
+        </div>
+    </section>
 
+    <section class="contact" id="contact">
+        <div class="heading">
+            <h2>Contact</h2>
+        </div>
+        <div class="content">
+            <div class="contactInfo">
+                <h3>Contact info</h3>
+                <div class="contactInfoBx">
+                    <div class="box">
+                        <div class="text">
+                            <h3>Phone</h3>
+                            <p>+46725714724</p>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="box">
+                        <div class="text">
+                            <h3>Address</h3>
+                            <p>Lagmansbacken 9, <br>Norsborg,Stockholm,<br>14556</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="formv">
+                <form>
+                    <input type="name" name="" placeholder="Full Name">
+                    <input type="email" name="" placeholder="Email">
+                    <input type="phone" name="" placeholder="phone number">
+                    <textarea placeholder="Your Massage"></textarea>
+                    <input type="submit" value="Send">
+
+                </form>
+            </div>
+        </div>
+            
+            
     </section>
 
     <!-- Javascript.info/onscroll -->
@@ -87,7 +146,15 @@
             var header = document.querySelector("header");
             header.classList.toggle("sticky", window.scrollY > 0)
         })
+
+        function  toggleMenu(){
+            var menuToggle = document.querySelector('.toggle');
+            var menu = document.querySelector('.menu');
+            menuToggle.classList.toggle('active');
+            menu.classList.toggle('active');
+        }
     </script>
+    
 
     
 </body>
