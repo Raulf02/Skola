@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
+
     <link rel="stylesheet" href="style.css">
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="index.js">
+    <script src="index.js" defer></script>
     <title>My portfolio</title>
-    <script defer src="index.js"></script>
+
 </head>
+
 <body>
     <header>
         <a href="#" class="logo">Portfolio</a>
@@ -37,14 +39,21 @@
         <div class="content">
             <div class="contentLorum">
                 <h3>I'm a KYH student</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem facilis deserunt accusamus nam, minus, impedit nihil quod debitis eveniet repellendus expedita. Odit delectus saepe qui vel id necessitatibus quod impedit? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores eveniet ipsum fugiat id amet totam maiores suscipit, iusto eos saepe distinctio eius. Voluptatibus soluta modi rem magnam! Omnis, neque quas. <br><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta accusamus tempore vel laborum, architecto ex ducimus corrupti, deleniti repudiandae distinctio asperiores voluptatum nam quis in doloribus quo earum suscipit tenetur. Lorem ipsum dolor sit amet consectetur adipisicing elit.  </p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem facilis deserunt accusamus nam,
+                    minus, impedit nihil quod debitis eveniet repellendus expedita. Odit delectus saepe qui vel id
+                    necessitatibus quod impedit? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores
+                    eveniet ipsum fugiat id amet totam maiores suscipit, iusto eos saepe distinctio eius. Voluptatibus
+                    soluta modi rem magnam! Omnis, neque quas. <br><br> Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Dicta accusamus tempore vel laborum, architecto ex ducimus corrupti, deleniti
+                    repudiandae distinctio asperiores voluptatum nam quis in doloribus quo earum suscipit tenetur. Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit. </p>
             </div>
             <div class="pic">
                 <img src="book.jpg" alt="img">
             </div>
         </div>
     </section>
-    
+
     <section class="skills" id="skills">
         <div class="heading">
             <h2>My experience</h2>
@@ -64,17 +73,17 @@
                         <span class="skills__name">Css</span>
                         <span class="skills__number">10%</span>
                         <span class="skills__bar skills__css"></span>
-                        <i class='bx bxl-css3 skills__icon' ></i>
+                        <i class='bx bxl-css3 skills__icon'></i>
                     </div>
 
                     <div class="skills__data">
                         <span class="skills__name">Javascript</span>
                         <span class="skills__number">5%</span>
                         <span class="skills__bar skills__js"></span>
-                        <i class='bx bxl-javascript skills__icon' ></i>
+                        <i class='bx bxl-javascript skills__icon'></i>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </section>
@@ -85,16 +94,16 @@
         </div>
         <div class="content">
             <div class="workimg">
-                <img src="projekt5.jpg">
+                <img src="projekt5.jpg" alt="">
             </div>
             <div class="workimg">
-                <img src="projekt2.jpg">
+                <img src="projekt2.jpg" alt="">
             </div>
             <div class="workimg">
-                <img src="projekt3.jpg">
+                <img src="projekt3.jpg" alt="">
             </div>
             <div class="workimg">
-                <img src="projekt4.jpg">
+                <img src="projekt4.jpg" alt="">
             </div>
         </div>
         <div class="heading">
@@ -126,36 +135,26 @@
                 </div>
             </div>
             <div class="formv">
-                <form>
-                    <input type="name" name="" placeholder="Full Name">
-                    <input type="email" name="" placeholder="Email">
-                    <input type="phone" name="" placeholder="phone number">
+                <div id="error_message">
+                </div>
+
+                <form action="#">
+                    <input type="text" id="name" name="name" placeholder="Full Name">
+                    <input type="email" id="email" name="email" placeholder="Email">
+                    <input type="number" id="phone" name="phone number" placeholder="Phone number">
                     <textarea placeholder="Your Massage"></textarea>
-                    <input type="submit" value="Send">
+                    <input type="submit" id="submit" value="Send">
 
                 </form>
+
+
             </div>
         </div>
-            
-            
+
+
     </section>
 
-    <!-- Javascript.info/onscroll -->
-    <script type="text/javascript">
-        window.addEventListener("scroll", function(){
-            var header = document.querySelector("header");
-            header.classList.toggle("sticky", window.scrollY > 0)
-        })
 
-        function  toggleMenu(){
-            var menuToggle = document.querySelector('.toggle');
-            var menu = document.querySelector('.menu');
-            menuToggle.classList.toggle('active');
-            menu.classList.toggle('active');
-        }
-    </script>
-    
-
-    
 </body>
+
 </html>
